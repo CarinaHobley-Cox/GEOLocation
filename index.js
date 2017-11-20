@@ -33,9 +33,11 @@ function successPosition(position) {
     var date = new Date(time);
 	var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
+ 
 	
 	//OK. Now we want to update the display with the correct values
-	$('#time').val(date);
+	$('#time').val(time);
+    $('#date').val(date);
 	$('#lattext').val(latitude);
     $('#longtext').val(longitude);
 	
